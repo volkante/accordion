@@ -6,17 +6,16 @@ const questions = document.querySelectorAll(".question");
 
 // Define a function to manage Accordion handler by click targets
 function manageAccordion(e) {
-  if (e.target == questions[0]) {
+  console.log("manageAccordion çalıştı!");
+  //toggle relevant accordion by its parent element
+  if (e.target.parentElement == questions[0]) {
     // if first question is clicked then toggle first paragraph
-    console.log("1. tıklandı");
     toggleAccordion(answerParagraphs[0]);
-  } else if (e.target == questions[1]) {
+  } else if (e.target.parentElement == questions[1]) {
     // if second question is clicked then toggle second paragraph
-    console.log("2. tıklandı");
     toggleAccordion(answerParagraphs[1]);
-  } else if (e.target == questions[2]) {
+  } else if (e.target.parentElement == questions[2]) {
     // if third question is clicked then toggle third paragraph
-    console.log("3. tıklandı");
     toggleAccordion(answerParagraphs[2]);
   }
 }

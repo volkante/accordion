@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+body {
+  border: 1px solid palevioletred;
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto 0;
+  border: 1px solid blue;
+}
+
+.qa-section {
+  border: 1px solid green;
+}
+
 .hidden {
   display: none;
 }
