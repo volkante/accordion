@@ -1,7 +1,14 @@
+/* 
+text gray color: GRAY 8 #343a40
+main-color (here to emphasize): teal 9 #087f5b (lime for h3)
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #343a40;
 }
 
 body {
@@ -16,6 +23,21 @@ body {
 
 .qa-section {
   border: 1px solid green;
+}
+
+h3 {
+  color: #343a40;
+  /* color: #087f5b; */
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+p.answer {
+  font-size: 1rem;
+  margin: 32px 48px;
+  line-height: 1.5;
 }
 
 .hidden {

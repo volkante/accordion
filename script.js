@@ -10,7 +10,7 @@ function manageAccordion(e) {
   console.log("manageAccordion çalıştı!");
   console.log(e);
   console.log(e.target);
-  //toggle relevant accordion if its parent element (question) or if its sibling paragraph is clicked
+  //toggle relevant accordion if its parent element (question) or its sibling paragraph has been clicked
   if (
     e.target.parentElement == questions[0] ||
     e.target == answerParagraphs[0]
