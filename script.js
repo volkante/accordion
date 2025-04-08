@@ -3,19 +3,28 @@
 // Select and store html elements
 const answerParagraphs = document.querySelectorAll(".answer");
 const questions = document.querySelectorAll(".question");
+const qaSections = document.querySelectorAll(".qa-section");
 
 // Define a function to manage Accordion handler by click targets
 function manageAccordion(e) {
   console.log("manageAccordion çalıştı!");
-  //toggle relevant accordion by its parent element
-  if (e.target.parentElement == questions[0]) {
-    // if first question is clicked then toggle first paragraph
+  console.log(e);
+  console.log(e.target);
+  //toggle relevant accordion if its parent element (question) or if its sibling paragraph is clicked
+  if (
+    e.target.parentElement == questions[0] ||
+    e.target == answerParagraphs[0]
+  ) {
     toggleAccordion(answerParagraphs[0]);
-  } else if (e.target.parentElement == questions[1]) {
-    // if second question is clicked then toggle second paragraph
+  } else if (
+    e.target.parentElement == questions[1] ||
+    e.target == answerParagraphs[1]
+  ) {
     toggleAccordion(answerParagraphs[1]);
-  } else if (e.target.parentElement == questions[2]) {
-    // if third question is clicked then toggle third paragraph
+  } else if (
+    e.target.parentElement == questions[2] ||
+    e.target == answerParagraphs[2]
+  ) {
     toggleAccordion(answerParagraphs[2]);
   }
 }
@@ -30,6 +39,6 @@ function toggleAccordion(element) {
 }
 
 // Add click event listener to each question and give manageAccordion to it as an argument
-questions.forEach((element) => {
+qaSections.forEach((element) => {
   element.addEventListener("click", manageAccordion);
 });
