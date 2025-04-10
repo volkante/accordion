@@ -16,16 +16,19 @@ function manageAccordion(e) {
     e.target == answerParagraphs[0]
   ) {
     toggleAccordion(answerParagraphs[0]);
+    toggleActiveClass(questions[0]);
   } else if (
     e.target.parentElement == questions[1] ||
     e.target == answerParagraphs[1]
   ) {
     toggleAccordion(answerParagraphs[1]);
+    toggleActiveClass(questions[1]);
   } else if (
     e.target.parentElement == questions[2] ||
     e.target == answerParagraphs[2]
   ) {
     toggleAccordion(answerParagraphs[2]);
+    toggleActiveClass(questions[2]);
   }
 }
 
@@ -35,6 +38,14 @@ function toggleAccordion(element) {
     element.classList.remove("hidden");
   } else {
     element.classList.add("hidden");
+  }
+}
+
+function toggleActiveClass(element) {
+  if (element.classList.contains("active")) {
+    element.classList.remove("active");
+  } else {
+    element.classList.add("active");
   }
 }
 
