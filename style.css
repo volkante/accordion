@@ -11,32 +11,47 @@ main-color (here to emphasize): teal 9 #087f5b (lime for h3)
 }
 
 body {
-  border: 1px solid palevioletred;
+  /* border: 1px solid red; */
+  background-color: #f8f9fa;
 }
 
 .container {
   width: 72%;
-  margin: 100px auto 0;
-  border: 1px solid blue;
+  margin: 100px auto 24px;
+  /* border: 1px solid blue; */
 }
 
 .qa-section {
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  background-color: white;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.first-section,
+.second-section {
+  margin-bottom: 40px;
 }
 
 .question {
   display: flex;
-  padding: 16px 8px;
+  /* padding: 16px 8px; */
   gap: 20px;
   color: #343a40;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: 0.5px;
 }
 
 h3 {
   flex-grow: 3;
+}
+
+p.question-number {
+  font-size: 23.4px;
 }
 
 svg.open-icon {
@@ -46,8 +61,10 @@ svg.open-icon {
 }
 
 p.answer {
-  font-size: 1.2rem;
-  margin: 12px 72px 24px;
+  font-size: 20px;
+  padding-top: 24px;
+  margin-left: 48px;
+  margin-right: 48px;
   line-height: 1.7;
 }
 
@@ -57,4 +74,8 @@ p.answer {
 
 .active {
   color: #087f5b;
+}
+
+.active-section {
+  border-top: 2px #087f5b solid;
 }
