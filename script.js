@@ -10,43 +10,23 @@ function manageAccordion(e) {
   console.log("manageAccordion çalıştı!");
   console.log(e);
   console.log(e.target);
-  //toggle relevant accordion if its parent element (question) or its sibling paragraph has been clicked
-  if (
-    e.target.parentElement == questions[0] ||
-    e.target == answerParagraphs[0]
-  ) {
-    toggleAccordion(answerParagraphs[0]);
-    toggleActiveClass(questions[0]);
-  } else if (
-    e.target.parentElement == questions[1] ||
-    e.target == answerParagraphs[1]
-  ) {
-    toggleAccordion(answerParagraphs[1]);
-    toggleActiveClass(questions[1]);
-  } else if (
-    e.target.parentElement == questions[2] ||
-    e.target == answerParagraphs[2]
-  ) {
-    toggleAccordion(answerParagraphs[2]);
-    toggleActiveClass(questions[2]);
-  }
+
+  // If a section contains the clicked element, toggle accordion and display paragraph
+  qaSections.forEach((section, index) => {
+    if (section.contains(e.target)) {
+      toggleAccordion(answerParagraphs[index]);
+      toggleActiveClass(questions[index]);
+    }
+  });
 }
 
 // Open accordion if closed, close if open by toggling class name
 function toggleAccordion(element) {
-  if (element.classList.contains("hidden")) {
-    element.classList.remove("hidden");
-  } else {
-    element.classList.add("hidden");
-  }
+  element.classList.toggle("hidden");
 }
 
 function toggleActiveClass(element) {
-  if (element.classList.contains("active")) {
-    element.classList.remove("active");
-  } else {
-    element.classList.add("active");
-  }
+  element.classList.toggle("active");
 }
 
 // Add click event listener to each question and give manageAccordion to it as an argument
