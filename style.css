@@ -40,18 +40,18 @@ body {
   /* padding: 16px 8px; */
   gap: 20px;
   color: #343a40;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.5px;
 }
 
-h3 {
+p.question-title {
   flex-grow: 3;
 }
 
 p.question-number {
-  font-size: 23.4px;
+  font-size: 24px;
 }
 
 svg.open-icon {
