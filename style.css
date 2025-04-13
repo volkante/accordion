@@ -26,6 +26,7 @@ body {
   grid-template-columns: 1fr 12fr 1fr;
   column-gap: 20px;
   row-gap: 24px;
+  position: relative;
 }
 
 .first-section,
@@ -51,13 +52,10 @@ p.question-number {
 }
 
 svg.open-icon {
-  /*   width: 32px;
-  height: 32px; */
-  font-size: 24px;
   color: #343a40;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.5px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
 }
 
 p.answer {
