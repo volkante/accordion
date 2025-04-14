@@ -21,11 +21,11 @@ body {
 
 .qa-section {
   background-color: white;
-  padding: 20px;
+  padding: 24px 32px;
   display: grid;
   grid-template-columns: 1fr 12fr 1fr;
   column-gap: 20px;
-  row-gap: 24px;
+  row-gap: 32px;
   position: relative;
 }
 
@@ -54,8 +54,8 @@ p.question-number {
 svg.open-icon {
   color: #343a40;
   position: absolute;
-  top: 16px;
-  right: 20px;
+  top: 20px;
+  right: 32px;
 }
 
 p.answer {

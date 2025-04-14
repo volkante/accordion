@@ -1,8 +1,7 @@
 "use strict";
 
-/* // Select and store html elements
+// Select and store html elements
 const answerParagraphs = document.querySelectorAll(".answer");
-const questions = document.querySelectorAll(".question");
 const qaSections = document.querySelectorAll(".qa-section");
 
 // Define a function to manage Accordion handler by click targets
@@ -29,4 +28,4 @@ function toggleActiveClass(element) {
 // Add click event listener to each question and give manageAccordion to it as an argument
 qaSections.forEach((element) => {
   element.addEventListener("click", manageAccordion);
-}); */
+});
