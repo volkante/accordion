@@ -6,7 +6,6 @@ const qaSections = document.querySelectorAll(".qa-section");
 
 // Define a function to manage Accordion handler by click targets
 function manageAccordion(e) {
-  console.log("manageAccordion çalıştı!");
   // If a section contains the clicked element, toggle accordion and display paragraph
   qaSections.forEach((section, index) => {
     if (section.contains(e.target)) {
