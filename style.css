@@ -1,5 +1,7 @@
 /* 
+SOURCE: Open Color
 text gray color: GRAY 8 #343a40
+number gray color: GRAY 6 #868e96
 main-color (here to emphasize): teal 9 #087f5b (lime for h3)
 */
 
@@ -14,9 +16,9 @@ body {
   background-color: #f8f9fa;
 }
 
-.container {
+.accordion {
   width: 700px;
-  margin: 100px auto 100px;
+  margin: 100px auto;
 }
 
 .qa-section {
@@ -44,9 +46,8 @@ body {
 }
 
 .question-number {
-  /*  align-self: start; */
   font-size: 24px;
-  color: #343a40;
+  color: #868e96;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.5px;
