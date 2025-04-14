@@ -34,7 +34,7 @@ body {
   margin-bottom: 40px;
 }
 
-p.question-title {
+.question-title {
   font-size: 24px;
   color: #343a40;
   font-weight: 500;
@@ -42,7 +42,7 @@ p.question-title {
   letter-spacing: 0.5px;
 }
 
-p.question-number {
+.question-number {
   /*  align-self: start; */
   font-size: 24px;
   color: #343a40;
@@ -51,14 +51,14 @@ p.question-number {
   letter-spacing: 0.5px;
 }
 
-svg.open-icon {
+.open-icon {
   color: #343a40;
   position: absolute;
   top: 20px;
   right: 32px;
 }
 
-p.answer {
+.answer {
   grid-column: 2/3;
   font-size: 16px;
   line-height: 1.6;
@@ -71,4 +71,8 @@ p.answer {
 
 .active {
   color: #087f5b;
+}
+
+.border-top-active {
+  border-top: 4px solid #087f5b;
 }

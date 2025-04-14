@@ -11,7 +11,8 @@ function manageAccordion(e) {
   qaSections.forEach((section, index) => {
     if (section.contains(e.target)) {
       toggleAccordion(answerParagraphs[index]);
-      toggleActiveClass(questions[index]);
+      toggleBorder(section);
+      toggleActiveClass(section);
     }
   });
 }
@@ -21,11 +22,19 @@ function toggleAccordion(element) {
   element.classList.toggle("hidden");
 }
 
+// Change the color of number, question and svg by adding or removing them active class
 function toggleActiveClass(element) {
-  element.classList.toggle("active");
+  for (let i = 0; i < 3; i++) {
+    element.children[i].classList.toggle("active");
+  }
 }
 
-// Add click event listener to each question and give manageAccordion to it as an argument
+// Add top-border to the active section
+function toggleBorder(element) {
+  element.classList.toggle("border-top-active");
+}
+
+// Add click event listener to each section and give manageAccordion to it as an argument
 qaSections.forEach((element) => {
   element.addEventListener("click", manageAccordion);
 });
