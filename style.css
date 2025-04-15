@@ -17,7 +17,7 @@ body {
 }
 
 .accordion {
-  width: 50%;
+  width: 60%;
   margin: 100px auto;
 }
 
@@ -65,13 +65,22 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #343a40;
-}
-
-.hidden {
   display: none;
 }
+
+/* Managing active class and its childs */
 
 .active {
   color: #087f5b;
   border-top: 4px solid #087f5b;
+}
+
+.active .answer {
+  display: block;
+}
+
+.active .question-title,
+.active .question-number,
+.active .open-icon {
+  color: #087f5b;
 }
