@@ -17,7 +17,7 @@ body {
 }
 
 .accordion {
-  width: 60%;
+  width: 50%;
   margin: 100px auto;
 }
 
@@ -63,7 +63,7 @@ body {
 .answer {
   grid-column: 2;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #343a40;
   display: none;
 }
