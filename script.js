@@ -10,7 +10,6 @@ function manageAccordion(e) {
   qaSections.forEach((section, index) => {
     if (section.contains(e.target)) {
       toggleAccordion(answerParagraphs[index]);
-      toggleBorder(section);
       toggleActiveClass(section);
     }
   });
@@ -26,11 +25,6 @@ function toggleActiveClass(element) {
   for (let i = 0; i < 3; i++) {
     element.children[i].classList.toggle("active");
   }
-}
-
-// Add top-border to the active section
-function toggleBorder(element) {
-  element.classList.toggle("border-top-active");
 }
 
 // Add click event listener to each section and give manageAccordion to it as an argument

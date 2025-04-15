@@ -1,5 +1,5 @@
 /* 
-SOURCE: Open Color
+COLOR SOURCE: Open Color
 text gray color: GRAY 8 #343a40
 number gray color: GRAY 6 #868e96
 main-color (here to emphasize): teal 9 #087f5b (lime for h3)
@@ -17,7 +17,7 @@ body {
 }
 
 .accordion {
-  width: 700px;
+  width: 50%;
   margin: 100px auto;
 }
 
@@ -29,7 +29,7 @@ body {
   column-gap: 20px;
   row-gap: 32px;
   position: relative;
-  box-shadow: 0 20px 30px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 .first-section,
@@ -61,7 +61,7 @@ body {
 }
 
 .answer {
-  grid-column: 2/3;
+  grid-column: 2;
   font-size: 16px;
   line-height: 1.6;
   color: #343a40;
@@ -73,8 +73,5 @@ body {
 
 .active {
   color: #087f5b;
-}
-
-.border-top-active {
   border-top: 4px solid #087f5b;
 }
